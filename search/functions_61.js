@@ -5,6 +5,7 @@ var searchData=
   ['audiodecoderfluidsynth',['AudioDecoderFluidSynth',['../class_aulib_1_1_audio_decoder_fluid_synth.html#af2f649da8af111b1e3f3042a79a3a5b5',1,'Aulib::AudioDecoderFluidSynth']]],
   ['audiodecodermodplug',['AudioDecoderModPlug',['../class_aulib_1_1_audio_decoder_mod_plug.html#a7bfcad2622dc7ce41534738328cf71fc',1,'Aulib::AudioDecoderModPlug']]],
   ['audiodecodermpg123',['AudioDecoderMpg123',['../class_aulib_1_1_audio_decoder_mpg123.html#ad4d30f223609682b63670a3e5d4b8375',1,'Aulib::AudioDecoderMpg123']]],
+  ['audiodecoderopus',['AudioDecoderOpus',['../class_aulib_1_1_audio_decoder_opus.html#a772e77f31505c2badb6e84a2106ead85',1,'Aulib::AudioDecoderOpus']]],
   ['audiodecodersndfile',['AudioDecoderSndfile',['../class_aulib_1_1_audio_decoder_sndfile.html#af6182ffe7f9e1bfb7471a2e2ecea87a3',1,'Aulib::AudioDecoderSndfile']]],
   ['audiodecodervorbis',['AudioDecoderVorbis',['../class_aulib_1_1_audio_decoder_vorbis.html#a5385a510c4cdd6a1be57e878e9f0a19a',1,'Aulib::AudioDecoderVorbis']]],
   ['audioresampler',['AudioResampler',['../class_aulib_1_1_audio_resampler.html#a3a72c986bcee0af8ef2851403cd7ca80',1,'Aulib::AudioResampler']]],
