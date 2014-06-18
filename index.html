@@ -127,12 +127,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <span class="comment">// Initialize the SDL library. We only need audio.</span></div>
-<div class="line">    <span class="keywordflow">if</span> (SDL_Init(SDL_INIT_AUDIO) != 0) {</div>
-<div class="line">        std::cerr &lt;&lt; <span class="stringliteral">&quot;Unable to initialize SDL: &quot;</span> &lt;&lt; SDL_GetError() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line">        <span class="keywordflow">return</span> 1;</div>
-<div class="line">    }</div>
-<div class="line"></div>
 <div class="line">    <span class="comment">// Initialize the SDL_audiolib library. Set the output sample rate to 96kHz, the audio format</span></div>
 <div class="line">    <span class="comment">// to 16-bit signed, use 2 output channels (stereo), and a 4kB output buffer.</span></div>
 <div class="line">    <span class="keywordflow">if</span> (<a class="code" href="namespace_aulib.html#ac82bf0fbde45439052c1ffbca293d668">Aulib::init</a>(96000, AUDIO_S16SYS, 2, 4096) != 0) {</div>
@@ -157,14 +151,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keywordflow">while</span> (music-&gt;<a class="code" href="class_aulib_1_1_audio_stream.html#a2e90af964e68bf3cf9420d435d618df4">isPlaying</a>()) {</div>
 <div class="line">        SDL_Delay(200);</div>
 <div class="line">    };</div>
-<div class="line"></div>
-<div class="line">    <span class="comment">// Shut down the SDL library.</span></div>
-<div class="line">    SDL_Quit();</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 18 2014 02:02:31 for SDL_audiolib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 18 2014 04:25:21 for SDL_audiolib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
