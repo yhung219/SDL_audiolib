@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>SDL_audiolib: src/audiostream_p.cpp Source File</title>
+<title>SDL_audiolib: /home/realnc/projects/SDL_audiolib/src/audiostream_p.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,9 +109,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="audiostream__p_8h.html">audiostream_p.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="audiostream_8h.html">audiostream.h</a>&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="audioresampler_8h.html">audioresampler.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="audiodecoder_8h.html">audiodecoder.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_audio_stream_8h.html">Aulib/AudioStream.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_audio_resampler_8h.html">Aulib/AudioResampler.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_audio_decoder_8h.html">Aulib/AudioDecoder.h</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="aulib__debug_8h.html">aulib_debug.h</a>&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
@@ -229,19 +229,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    AudioStream_priv::fSampleConverter(out, finalMixBuffer, wantedSamples);</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
-<div class="ttc" id="audiodecoder_8h_html"><div class="ttname"><a href="audiodecoder_8h.html">audiodecoder.h</a></div></div>
-<div class="ttc" id="class_aulib_1_1_audio_decoder_html"><div class="ttname"><a href="class_aulib_1_1_audio_decoder.html">Aulib::AudioDecoder</a></div><div class="ttdoc">Abstract base class for audio decoders. </div><div class="ttdef"><b>Definition:</b> <a href="audiodecoder_8h_source.html#l00032">audiodecoder.h:32</a></div></div>
+<div class="ttc" id="_audio_resampler_8h_html"><div class="ttname"><a href="_audio_resampler_8h.html">AudioResampler.h</a></div></div>
+<div class="ttc" id="class_aulib_1_1_audio_decoder_html"><div class="ttname"><a href="class_aulib_1_1_audio_decoder.html">Aulib::AudioDecoder</a></div><div class="ttdoc">Abstract base class for audio decoders. </div><div class="ttdef"><b>Definition:</b> <a href="_audio_decoder_8h_source.html#l00032">AudioDecoder.h:32</a></div></div>
+<div class="ttc" id="_audio_decoder_8h_html"><div class="ttname"><a href="_audio_decoder_8h.html">AudioDecoder.h</a></div></div>
 <div class="ttc" id="audiostream__p_8h_html"><div class="ttname"><a href="audiostream__p_8h.html">audiostream_p.h</a></div></div>
+<div class="ttc" id="_audio_stream_8h_html"><div class="ttname"><a href="_audio_stream_8h.html">AudioStream.h</a></div></div>
 <div class="ttc" id="aulib__debug_8h_html_a4567ee2af7833caf30d95a4d33aae84a"><div class="ttname"><a href="aulib__debug_8h.html#a4567ee2af7833caf30d95a4d33aae84a">AM_debugAssert</a></div><div class="ttdeci">#define AM_debugAssert(x)</div><div class="ttdef"><b>Definition:</b> <a href="aulib__debug_8h_source.html#l00031">aulib_debug.h:31</a></div></div>
-<div class="ttc" id="class_aulib_1_1_audio_resampler_html"><div class="ttname"><a href="class_aulib_1_1_audio_resampler.html">Aulib::AudioResampler</a></div><div class="ttdoc">Abstract base class for audio resamplers. </div><div class="ttdef"><b>Definition:</b> <a href="audioresampler_8h_source.html#l00032">audioresampler.h:32</a></div></div>
+<div class="ttc" id="class_aulib_1_1_audio_resampler_html"><div class="ttname"><a href="class_aulib_1_1_audio_resampler.html">Aulib::AudioResampler</a></div><div class="ttdoc">Abstract base class for audio resamplers. </div><div class="ttdef"><b>Definition:</b> <a href="_audio_resampler_8h_source.html#l00032">AudioResampler.h:32</a></div></div>
 <div class="ttc" id="aulib__debug_8h_html"><div class="ttname"><a href="aulib__debug_8h.html">aulib_debug.h</a></div></div>
-<div class="ttc" id="audioresampler_8h_html"><div class="ttname"><a href="audioresampler_8h.html">audioresampler.h</a></div></div>
-<div class="ttc" id="class_aulib_1_1_audio_resampler_html_a04e8ee29655cf701d3c5b049ddff638f"><div class="ttname"><a href="class_aulib_1_1_audio_resampler.html#a04e8ee29655cf701d3c5b049ddff638f">Aulib::AudioResampler::setDecoder</a></div><div class="ttdeci">void setDecoder(class AudioDecoder *decoder)</div><div class="ttdoc">Sets the decoder that is to be used as source. </div><div class="ttdef"><b>Definition:</b> <a href="audioresampler_8cpp_source.html#l00229">audioresampler.cpp:229</a></div></div>
-<div class="ttc" id="audiostream_8h_html"><div class="ttname"><a href="audiostream_8h.html">audiostream.h</a></div></div>
+<div class="ttc" id="class_aulib_1_1_audio_resampler_html_a04e8ee29655cf701d3c5b049ddff638f"><div class="ttname"><a href="class_aulib_1_1_audio_resampler.html#a04e8ee29655cf701d3c5b049ddff638f">Aulib::AudioResampler::setDecoder</a></div><div class="ttdeci">void setDecoder(class AudioDecoder *decoder)</div><div class="ttdoc">Sets the decoder that is to be used as source. </div><div class="ttdef"><b>Definition:</b> <a href="_audio_resampler_8cpp_source.html#l00229">AudioResampler.cpp:229</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 18 2014 04:25:21 for SDL_audiolib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
