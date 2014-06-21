@@ -150,7 +150,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Turns the major, minor and patch numbers of a version into an integer of the form 0xMMNNPP (MM = major, NN = minor, PP = patch).</p>
 <p>You can use this for easy compile-time version comparisons, like: </p>
-<pre class="fragment">#if (AULIB_VERSION &gt;= QT_VERSION_CHECK(1, 4, 2))
+<pre class="fragment">#if (AULIB_VERSION &gt;= AULIB_VERSION_CHECK(1, 4, 2))
     // This version of SDL_audiolib is at least 1.4.2.
 #endif</pre> 
 <p>Definition at line <a class="el" href="aulib__version_8h_source.html#l00050">50</a> of file <a class="el" href="aulib__version_8h_source.html">aulib_version.h</a>.</p>
