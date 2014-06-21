@@ -8,7 +8,7 @@ var searchData=
   ['setloopcallback',['setLoopCallback',['../class_aulib_1_1_stream.html#a4507a78ff218ba2bf1311a791c074adf',1,'Aulib::Stream']]],
   ['setspec',['setSpec',['../class_aulib_1_1_audio_resampler.html#a592ee5a8464e68947fb89bda7716c60a',1,'Aulib::AudioResampler']]],
   ['setvolume',['setVolume',['../class_aulib_1_1_audio_stream.html#adee375a72c8439982f2e15389a609ad1',1,'Aulib::AudioStream::setVolume()'],['../class_aulib_1_1_stream.html#a2d949a9cc54495740e2db916ffc97098',1,'Aulib::Stream::setVolume()']]],
-  ['stop',['stop',['../class_aulib_1_1_audio_stream.html#a4b34ca9d1b9740e9c1fa4db5e590de5f',1,'Aulib::AudioStream::stop()'],['../class_aulib_1_1_stream.html#aae176a3dbd14dd623c8450537b8e5abf',1,'Aulib::Stream::stop()']]],
+  ['stop',['stop',['../class_aulib_1_1_audio_stream.html#a1aeac77d83f0090f165f48043390e267',1,'Aulib::AudioStream::stop()'],['../class_aulib_1_1_stream.html#abb1cfee631ea929bf65382c0f7ce67c4',1,'Aulib::Stream::stop()']]],
   ['stream',['Stream',['../class_aulib_1_1_stream.html#a5190cfbdad57f6c662ddbd5325d26c99',1,'Aulib::Stream']]],
   ['stream',['Stream',['../class_aulib_1_1_stream.html',1,'Aulib']]],
   ['stream_2ecpp',['Stream.cpp',['../_stream_8cpp.html',1,'']]],
