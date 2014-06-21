@@ -116,9 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1df6e29dabfb90ea5651b16d170acfb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_stream.html#a1df6e29dabfb90ea5651b16d170acfb6">AudioStream</a> (const char *filename, class <a class="el" href="class_aulib_1_1_audio_decoder.html">AudioDecoder</a> *decoder, class <a class="el" href="class_aulib_1_1_audio_resampler.html">AudioResampler</a> *resampler)</td></tr>
 <tr class="memdesc:a1df6e29dabfb90ea5651b16d170acfb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an audio stream from the given file name, decoder and resampler.  <a href="#a1df6e29dabfb90ea5651b16d170acfb6">More...</a><br/></td></tr>
 <tr class="separator:a1df6e29dabfb90ea5651b16d170acfb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a696aac3b6bba064c1448586090fb8bae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_stream.html#a696aac3b6bba064c1448586090fb8bae">AudioStream</a> (SDL_RWops *rwops, class <a class="el" href="class_aulib_1_1_audio_decoder.html">AudioDecoder</a> *decoder, class <a class="el" href="class_aulib_1_1_audio_resampler.html">AudioResampler</a> *resampler)</td></tr>
-<tr class="memdesc:a696aac3b6bba064c1448586090fb8bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an audio stream from the given SDL_RWops, decoder and resampler.  <a href="#a696aac3b6bba064c1448586090fb8bae">More...</a><br/></td></tr>
-<tr class="separator:a696aac3b6bba064c1448586090fb8bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fac5cf21725586748ede22b3dea1029"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_stream.html#a2fac5cf21725586748ede22b3dea1029">AudioStream</a> (SDL_RWops *rwops, class <a class="el" href="class_aulib_1_1_audio_decoder.html">AudioDecoder</a> *decoder, class <a class="el" href="class_aulib_1_1_audio_resampler.html">AudioResampler</a> *resampler, bool closeRw)</td></tr>
+<tr class="memdesc:a2fac5cf21725586748ede22b3dea1029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an audio stream from the given SDL_RWops, decoder and resampler.  <a href="#a2fac5cf21725586748ede22b3dea1029">More...</a><br/></td></tr>
+<tr class="separator:a2fac5cf21725586748ede22b3dea1029"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadafa6278566657269666bccedd7dda4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_stream.html#aadafa6278566657269666bccedd7dda4">~AudioStream</a> () override</td></tr>
 <tr class="separator:aadafa6278566657269666bccedd7dda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b39f82413fb9126e0b9c08eac0ae319"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_stream.html#a3b39f82413fb9126e0b9c08eac0ae319">open</a> () override</td></tr>
@@ -243,7 +243,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a696aac3b6bba064c1448586090fb8bae"></a>
+<a class="anchor" id="a2fac5cf21725586748ede22b3dea1029"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -263,7 +263,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">class <a class="el" href="class_aulib_1_1_audio_resampler.html">AudioResampler</a> *&#160;</td>
-          <td class="paramname"><em>resampler</em>&#160;</td>
+          <td class="paramname"><em>resampler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closeRw</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -278,7 +284,8 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">rwops</td><td>SDL_RWops from which to feed data to the decoder. Must not be null.</td></tr>
     <tr><td class="paramname">decoder</td><td>Decoder to use for decoding the contents of the SDL_RWops. Must not be null.</td></tr>
-    <tr><td class="paramname">resampler</td><td>Resampler to use for converting the sample rate of the audio we get from the decoder. If this is null, then no resampling will be performed. </td></tr>
+    <tr><td class="paramname">resampler</td><td>Resampler to use for converting the sample rate of the audio we get from the decoder. If this is null, then no resampling will be performed.</td></tr>
+    <tr><td class="paramname">closeRw</td><td>Specifies whether 'rwops' should be automatically closed when the stream is destroyed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -308,7 +315,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00049">49</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00050">50</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -347,7 +354,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_aulib_1_1_stream.html#a4a28cad206772142f83a3ef1e1dbbe86">Aulib::Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00213">213</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00214">214</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -385,7 +392,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_aulib_1_1_stream.html#af6da935b336eddfbbb82d202a1fb002f">Aulib::Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00206">206</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00207">207</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -423,7 +430,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_aulib_1_1_stream.html#a837bd6254a35357b4a1e30ef4ae4a876">Aulib::Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00199">199</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00200">200</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -461,7 +468,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_aulib_1_1_stream.html#aa98882acd0d172a94da124260321c9ec">Aulib::Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00057">57</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00058">58</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -497,7 +504,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_aulib_1_1_stream.html#a833d24024f120f9e345da643aa2e4cb4">Aulib::Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00126">126</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00127">127</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -552,7 +559,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_aulib_1_1_stream.html#a557412d987d55b22ea31a219d19a7c14">Aulib::Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00077">77</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00078">78</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -588,7 +595,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_aulib_1_1_stream.html#a556f2c76c018409fc9e2d4b28bb9abc0">Aulib::Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00146">146</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00147">147</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -625,7 +632,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_aulib_1_1_stream.html#a7abd00fdefaeb23322cee3fc4d1f3aea">Aulib::Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00167">167</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00168">168</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -671,7 +678,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_aulib_1_1_stream.html#a8477e7ac6c10439b9631aadd3dc4277c">Aulib::Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00220">220</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00221">221</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -707,7 +714,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_aulib_1_1_stream.html#a2d949a9cc54495740e2db916ffc97098">Aulib::Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00180">180</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00181">181</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -744,7 +751,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_aulib_1_1_stream.html#abb1cfee631ea929bf65382c0f7ce67c4">Aulib::Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00106">106</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00107">107</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -774,7 +781,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_aulib_1_1_stream.html#add99c211a35b0d3d4869aea1269793d3">Aulib::Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00192">192</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_stream_8cpp_source.html#l00193">193</a> of file <a class="el" href="_audio_stream_8cpp_source.html">AudioStream.cpp</a>.</p>
 
 </div>
 </div>

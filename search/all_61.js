@@ -50,7 +50,7 @@ var searchData=
   ['audioresamplersrc',['AudioResamplerSRC',['../class_aulib_1_1_audio_resampler_s_r_c.html#a8b3620ec18c42fdbabd444c8d12f88b5',1,'Aulib::AudioResamplerSRC']]],
   ['audioresamplersrc_2ecpp',['AudioResamplerSrc.cpp',['../_audio_resampler_src_8cpp.html',1,'']]],
   ['audioresamplersrc_2eh',['AudioResamplerSrc.h',['../_audio_resampler_src_8h.html',1,'']]],
-  ['audiostream',['AudioStream',['../class_aulib_1_1_audio_stream.html#a1df6e29dabfb90ea5651b16d170acfb6',1,'Aulib::AudioStream::AudioStream(const char *filename, class AudioDecoder *decoder, class AudioResampler *resampler)'],['../class_aulib_1_1_audio_stream.html#a696aac3b6bba064c1448586090fb8bae',1,'Aulib::AudioStream::AudioStream(SDL_RWops *rwops, class AudioDecoder *decoder, class AudioResampler *resampler)']]],
+  ['audiostream',['AudioStream',['../class_aulib_1_1_audio_stream.html#a1df6e29dabfb90ea5651b16d170acfb6',1,'Aulib::AudioStream::AudioStream(const char *filename, class AudioDecoder *decoder, class AudioResampler *resampler)'],['../class_aulib_1_1_audio_stream.html#a2fac5cf21725586748ede22b3dea1029',1,'Aulib::AudioStream::AudioStream(SDL_RWops *rwops, class AudioDecoder *decoder, class AudioResampler *resampler, bool closeRw)']]],
   ['audiostream',['AudioStream',['../class_aulib_1_1_audio_stream.html',1,'Aulib']]],
   ['audiostream_2ecpp',['AudioStream.cpp',['../_audio_stream_8cpp.html',1,'']]],
   ['audiostream_2eh',['AudioStream.h',['../_audio_stream_8h.html',1,'']]],
