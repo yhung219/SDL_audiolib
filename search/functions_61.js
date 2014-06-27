@@ -8,6 +8,7 @@ var searchData=
   ['audiodecoderopus',['AudioDecoderOpus',['../class_aulib_1_1_audio_decoder_opus.html#a772e77f31505c2badb6e84a2106ead85',1,'Aulib::AudioDecoderOpus']]],
   ['audiodecodersndfile',['AudioDecoderSndfile',['../class_aulib_1_1_audio_decoder_sndfile.html#af6182ffe7f9e1bfb7471a2e2ecea87a3',1,'Aulib::AudioDecoderSndfile']]],
   ['audiodecodervorbis',['AudioDecoderVorbis',['../class_aulib_1_1_audio_decoder_vorbis.html#a5385a510c4cdd6a1be57e878e9f0a19a',1,'Aulib::AudioDecoderVorbis']]],
+  ['audiodecoderwildmidi',['AudioDecoderWildmidi',['../class_aulib_1_1_audio_decoder_wildmidi.html#a81823ba3678709f81dcc41efef7378a3',1,'Aulib::AudioDecoderWildmidi']]],
   ['audioresampler',['AudioResampler',['../class_aulib_1_1_audio_resampler.html#a3a72c986bcee0af8ef2851403cd7ca80',1,'Aulib::AudioResampler']]],
   ['audioresamplersox',['AudioResamplerSox',['../class_aulib_1_1_audio_resampler_sox.html#a6e70dddd913f2bae061ba276508db2aa',1,'Aulib::AudioResamplerSox']]],
   ['audioresamplerspeex',['AudioResamplerSpeex',['../class_aulib_1_1_audio_resampler_speex.html#a22852f02a9082adb3fa29ae0dc4cdbf8',1,'Aulib::AudioResamplerSpeex']]],
