@@ -8,6 +8,8 @@ var searchData=
   ['audiodecodermodplug_2eh',['AudioDecoderModplug.h',['../_audio_decoder_modplug_8h.html',1,'']]],
   ['audiodecodermpg123_2ecpp',['AudioDecoderMpg123.cpp',['../_audio_decoder_mpg123_8cpp.html',1,'']]],
   ['audiodecodermpg123_2eh',['AudioDecoderMpg123.h',['../_audio_decoder_mpg123_8h.html',1,'']]],
+  ['audiodecodermusepack_2ecpp',['AudioDecoderMusepack.cpp',['../_audio_decoder_musepack_8cpp.html',1,'']]],
+  ['audiodecodermusepack_2eh',['AudioDecoderMusepack.h',['../_audio_decoder_musepack_8h.html',1,'']]],
   ['audiodecoderopus_2ecpp',['AudioDecoderOpus.cpp',['../_audio_decoder_opus_8cpp.html',1,'']]],
   ['audiodecoderopus_2eh',['AudioDecoderOpus.h',['../_audio_decoder_opus_8h.html',1,'']]],
   ['audiodecodersndfile_2ecpp',['AudioDecoderSndfile.cpp',['../_audio_decoder_sndfile_8cpp.html',1,'']]],
