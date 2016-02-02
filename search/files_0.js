@@ -2,6 +2,8 @@ var searchData=
 [
   ['audiodecoder_2ecpp',['AudioDecoder.cpp',['../_audio_decoder_8cpp.html',1,'']]],
   ['audiodecoder_2eh',['AudioDecoder.h',['../_audio_decoder_8h.html',1,'']]],
+  ['audiodecoderbassmidi_2ecpp',['AudioDecoderBassmidi.cpp',['../_audio_decoder_bassmidi_8cpp.html',1,'']]],
+  ['audiodecoderbassmidi_2eh',['AudioDecoderBassmidi.h',['../_audio_decoder_bassmidi_8h.html',1,'']]],
   ['audiodecoderfluidsynth_2ecpp',['AudioDecoderFluidsynth.cpp',['../_audio_decoder_fluidsynth_8cpp.html',1,'']]],
   ['audiodecoderfluidsynth_2eh',['AudioDecoderFluidsynth.h',['../_audio_decoder_fluidsynth_8h.html',1,'']]],
   ['audiodecodermodplug_2ecpp',['AudioDecoderModplug.cpp',['../_audio_decoder_modplug_8cpp.html',1,'']]],

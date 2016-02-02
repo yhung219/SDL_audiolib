@@ -1,6 +1,7 @@
 var searchData=
 [
   ['audiodecoder',['AudioDecoder',['../class_aulib_1_1_audio_decoder.html',1,'Aulib']]],
+  ['audiodecoderbassmidi',['AudioDecoderBassmidi',['../class_aulib_1_1_audio_decoder_bassmidi.html',1,'Aulib']]],
   ['audiodecoderfluidsynth',['AudioDecoderFluidSynth',['../class_aulib_1_1_audio_decoder_fluid_synth.html',1,'Aulib']]],
   ['audiodecodermodplug',['AudioDecoderModPlug',['../class_aulib_1_1_audio_decoder_mod_plug.html',1,'Aulib']]],
   ['audiodecodermpg123',['AudioDecoderMpg123',['../class_aulib_1_1_audio_decoder_mpg123.html',1,'Aulib']]],
