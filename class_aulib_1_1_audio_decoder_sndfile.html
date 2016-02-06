@@ -123,8 +123,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a943ac4c3f30b2f69f193e133f3a4acf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a358724794ca4193367c1fb4c4f479f86"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder_sndfile.html#a358724794ca4193367c1fb4c4f479f86">getRate</a> () const  override</td></tr>
 <tr class="separator:a358724794ca4193367c1fb4c4f479f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87a72091dedc7bebca4a0424bad5a9cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder_sndfile.html#a87a72091dedc7bebca4a0424bad5a9cf">doDecoding</a> (float buf[], int len, bool &amp;callAgain) override</td></tr>
-<tr class="separator:a87a72091dedc7bebca4a0424bad5a9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e4f5939cded4bca6cb4e8d9bc40ef6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder_sndfile.html#ac9e4f5939cded4bca6cb4e8d9bc40ef6">doDecoding</a> (float buf[], size_t len, bool &amp;callAgain) override</td></tr>
+<tr class="separator:ac9e4f5939cded4bca6cb4e8d9bc40ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24dc4bec4f258e12b5c395733cfdfcad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder_sndfile.html#a24dc4bec4f258e12b5c395733cfdfcad">rewind</a> () override</td></tr>
 <tr class="separator:a24dc4bec4f258e12b5c395733cfdfcad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7994d9b2c03af19862ae738a422d30be"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder_sndfile.html#a7994d9b2c03af19862ae738a422d30be">duration</a> () const  override</td></tr>
@@ -138,8 +138,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae66a6ad8f31de5eecbcc9ea068a90796 inherit pub_methods_class_aulib_1_1_audio_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7de4e439fa3d1d64c94b022f86c30a4 inherit pub_methods_class_aulib_1_1_audio_decoder"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder.html#aa7de4e439fa3d1d64c94b022f86c30a4">isOpen</a> () const </td></tr>
 <tr class="separator:aa7de4e439fa3d1d64c94b022f86c30a4 inherit pub_methods_class_aulib_1_1_audio_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac579b0fae971eb3653a2a69290ab9317 inherit pub_methods_class_aulib_1_1_audio_decoder"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder.html#ac579b0fae971eb3653a2a69290ab9317">decode</a> (float buf[], int len, bool &amp;callAgain)</td></tr>
-<tr class="separator:ac579b0fae971eb3653a2a69290ab9317 inherit pub_methods_class_aulib_1_1_audio_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba1bf9dfdc0400f1e29f93afe69a03d inherit pub_methods_class_aulib_1_1_audio_decoder"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder.html#abba1bf9dfdc0400f1e29f93afe69a03d">decode</a> (float buf[], size_t len, bool &amp;callAgain)</td></tr>
+<tr class="separator:abba1bf9dfdc0400f1e29f93afe69a03d inherit pub_methods_class_aulib_1_1_audio_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -200,7 +200,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a87a72091dedc7bebca4a0424bad5a9cf"></a>
+<a class="anchor" id="ac9e4f5939cded4bca6cb4e8d9bc40ef6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -208,7 +208,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Aulib::AudioDecoderSndfile::doDecoding </td>
+          <td class="memname">size_t Aulib::AudioDecoderSndfile::doDecoding </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>buf</em>[], </td>
@@ -216,7 +216,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
@@ -238,7 +238,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_aulib_1_1_audio_decoder.html#abd26c25c3d744cca7db8675a6b1a53eb">Aulib::AudioDecoder</a>.</p>
+<p>Implements <a class="el" href="class_aulib_1_1_audio_decoder.html#aa2edf5ca4243e2b58992ba9256143c65">Aulib::AudioDecoder</a>.</p>
 
 <p>Definition at line <a class="el" href="_audio_decoder_sndfile_8cpp_source.html#l00168">168</a> of file <a class="el" href="_audio_decoder_sndfile_8cpp_source.html">AudioDecoderSndfile.cpp</a>.</p>
 

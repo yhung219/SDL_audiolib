@@ -124,7 +124,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">bool</span> open(SDL_RWops* rwops) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">unsigned</span> getChannels() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">unsigned</span> getRate() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> doDecoding(<span class="keywordtype">float</span> buf[], <span class="keywordtype">int</span> len, <span class="keywordtype">bool</span>&amp; callAgain) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">size_t</span> doDecoding(<span class="keywordtype">float</span> buf[], <span class="keywordtype">size_t</span> len, <span class="keywordtype">bool</span>&amp; callAgain) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span> rewind() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">float</span> duration() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> seekToTime(<span class="keywordtype">float</span> seconds) <span class="keyword">override</span>;</div>
@@ -140,7 +140,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_aulib_1_1_audio_decoder_html"><div class="ttname"><a href="class_aulib_1_1_audio_decoder.html">Aulib::AudioDecoder</a></div><div class="ttdoc">Abstract base class for audio decoders. </div><div class="ttdef"><b>Definition:</b> <a href="_audio_decoder_8h_source.html#l00032">AudioDecoder.h:32</a></div></div>
 <div class="ttc" id="_audio_decoder_8h_html"><div class="ttname"><a href="_audio_decoder_8h.html">AudioDecoder.h</a></div></div>
 <div class="ttc" id="class_aulib_1_1_audio_decoder_sndfile_html"><div class="ttname"><a href="class_aulib_1_1_audio_decoder_sndfile.html">Aulib::AudioDecoderSndfile</a></div><div class="ttdoc">Libsndfile decoder. </div><div class="ttdef"><b>Definition:</b> <a href="_audio_decoder_sndfile_8h_source.html#l00029">AudioDecoderSndfile.h:29</a></div></div>
-<div class="ttc" id="namespace_aulib_html"><div class="ttname"><a href="namespace_aulib.html">Aulib</a></div><div class="ttdef"><b>Definition:</b> <a href="_audio_decoder_8cpp_source.html#l00034">AudioDecoder.cpp:34</a></div></div>
+<div class="ttc" id="namespace_aulib_html"><div class="ttname"><a href="namespace_aulib.html">Aulib</a></div><div class="ttdef"><b>Definition:</b> <a href="_audio_decoder_8cpp_source.html#l00035">AudioDecoder.cpp:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

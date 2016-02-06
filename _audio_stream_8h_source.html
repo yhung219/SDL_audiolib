@@ -112,53 +112,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef AUDIOSTREAM_H</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define AUDIOSTREAM_H</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_stream_8h.html">Aulib/Stream.h</a>&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">struct </span>SDL_RWops;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">struct </span>SDL_AudioSpec;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_aulib.html">Aulib</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_aulib_1_1_audio_stream.html">   34</a></span>&#160;<span class="keyword">class </span>AULIB_EXPORT <a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>: <span class="keyword">public</span> <a class="code" href="class_aulib_1_1_stream.html">Stream</a> {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename, <span class="keyword">class</span> <a class="code" href="class_aulib_1_1_audio_decoder.html">AudioDecoder</a>* decoder, <span class="keyword">class</span> <a class="code" href="class_aulib_1_1_audio_resampler.html">AudioResampler</a>* resampler);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>(SDL_RWops* rwops, <span class="keyword">class</span> <a class="code" href="class_aulib_1_1_audio_decoder.html">AudioDecoder</a>* decoder, <span class="keyword">class</span> <a class="code" href="class_aulib_1_1_audio_resampler.html">AudioResampler</a>* resampler,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordtype">bool</span> closeRw);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    ~<a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> open() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> play(<span class="keywordtype">unsigned</span> iterations = 1, <span class="keywordtype">float</span> fadeTime = 0.f) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> stop(<span class="keywordtype">float</span> fadeTime = 0.f) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> pause(<span class="keywordtype">float</span> fadeTime = 0.f) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> resume(<span class="keywordtype">float</span> fadeTime = 0.f) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">bool</span> rewind() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> setVolume(<span class="keywordtype">float</span> volume) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">float</span> volume() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">bool</span> isPlaying() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> isPaused() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">float</span> duration() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">bool</span> seekToTime(<span class="keywordtype">float</span> seconds) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>AudioStream_priv;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">int</span> <a class="code" href="namespace_aulib.html#ac82bf0fbde45439052c1ffbca293d668">Aulib::init</a>(<span class="keywordtype">int</span> freq, <span class="keywordtype">int</span> format, <span class="keywordtype">int</span> channels, <span class="keywordtype">int</span> bufferSize);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">class </span>AudioStream_priv* <span class="keyword">const</span> d;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>(<span class="keyword">const</span> <a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>&amp;);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>&amp; operator =(<span class="keyword">const</span> <a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>&amp;);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <span class="comment">// namespace Aulib</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="aulib_8h.html">aulib.h</a>&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_stream_8h.html">Aulib/Stream.h</a>&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">struct </span>SDL_RWops;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">struct </span>SDL_AudioSpec;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_aulib.html">Aulib</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_aulib_1_1_audio_stream.html">   35</a></span>&#160;<span class="keyword">class </span>AULIB_EXPORT <a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>: <span class="keyword">public</span> <a class="code" href="class_aulib_1_1_stream.html">Stream</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename, <span class="keyword">class</span> <a class="code" href="class_aulib_1_1_audio_decoder.html">AudioDecoder</a>* decoder, <span class="keyword">class</span> <a class="code" href="class_aulib_1_1_audio_resampler.html">AudioResampler</a>* resampler);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>(SDL_RWops* rwops, <span class="keyword">class</span> <a class="code" href="class_aulib_1_1_audio_decoder.html">AudioDecoder</a>* decoder, <span class="keyword">class</span> <a class="code" href="class_aulib_1_1_audio_resampler.html">AudioResampler</a>* resampler,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordtype">bool</span> closeRw);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    ~<a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> open() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">bool</span> play(<span class="keywordtype">unsigned</span> iterations = 1, <span class="keywordtype">float</span> fadeTime = 0.f) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> stop(<span class="keywordtype">float</span> fadeTime = 0.f) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> pause(<span class="keywordtype">float</span> fadeTime = 0.f) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> resume(<span class="keywordtype">float</span> fadeTime = 0.f) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">bool</span> rewind() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> setVolume(<span class="keywordtype">float</span> volume) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">float</span> volume() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> isPlaying() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> isPaused() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">float</span> duration() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">bool</span> seekToTime(<span class="keywordtype">float</span> seconds) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>AudioStream_priv;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">int</span> <a class="code" href="namespace_aulib.html#ac82bf0fbde45439052c1ffbca293d668">Aulib::init</a>(<span class="keywordtype">int</span> freq, <span class="keywordtype">int</span> format, <span class="keywordtype">int</span> channels, <span class="keywordtype">int</span> bufferSize);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">class </span>AudioStream_priv* <span class="keyword">const</span> d;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>(<span class="keyword">const</span> <a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>&amp;);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>&amp; operator =(<span class="keyword">const</span> <a class="code" href="class_aulib_1_1_audio_stream.html">AudioStream</a>&amp;);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;} <span class="comment">// namespace Aulib</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="namespace_aulib_html_ac82bf0fbde45439052c1ffbca293d668"><div class="ttname"><a href="namespace_aulib.html#ac82bf0fbde45439052c1ffbca293d668">Aulib::init</a></div><div class="ttdeci">int init(int freq, int format, int channels, int bufferSize)</div><div class="ttdoc">Initializes the audio system. </div><div class="ttdef"><b>Definition:</b> <a href="aulib_8cpp_source.html#l00043">aulib.cpp:43</a></div></div>
-<div class="ttc" id="class_aulib_1_1_audio_stream_html"><div class="ttname"><a href="class_aulib_1_1_audio_stream.html">Aulib::AudioStream</a></div><div class="ttdoc">Sample-based audio playback stream. </div><div class="ttdef"><b>Definition:</b> <a href="_audio_stream_8h_source.html#l00034">AudioStream.h:34</a></div></div>
+<div class="ttc" id="class_aulib_1_1_audio_stream_html"><div class="ttname"><a href="class_aulib_1_1_audio_stream.html">Aulib::AudioStream</a></div><div class="ttdoc">Sample-based audio playback stream. </div><div class="ttdef"><b>Definition:</b> <a href="_audio_stream_8h_source.html#l00035">AudioStream.h:35</a></div></div>
 <div class="ttc" id="class_aulib_1_1_audio_decoder_html"><div class="ttname"><a href="class_aulib_1_1_audio_decoder.html">Aulib::AudioDecoder</a></div><div class="ttdoc">Abstract base class for audio decoders. </div><div class="ttdef"><b>Definition:</b> <a href="_audio_decoder_8h_source.html#l00032">AudioDecoder.h:32</a></div></div>
-<div class="ttc" id="namespace_aulib_html"><div class="ttname"><a href="namespace_aulib.html">Aulib</a></div><div class="ttdef"><b>Definition:</b> <a href="_audio_decoder_8cpp_source.html#l00034">AudioDecoder.cpp:34</a></div></div>
-<div class="ttc" id="class_aulib_1_1_audio_resampler_html"><div class="ttname"><a href="class_aulib_1_1_audio_resampler.html">Aulib::AudioResampler</a></div><div class="ttdoc">Abstract base class for audio resamplers. </div><div class="ttdef"><b>Definition:</b> <a href="_audio_resampler_8h_source.html#l00032">AudioResampler.h:32</a></div></div>
+<div class="ttc" id="namespace_aulib_html"><div class="ttname"><a href="namespace_aulib.html">Aulib</a></div><div class="ttdef"><b>Definition:</b> <a href="_audio_decoder_8cpp_source.html#l00035">AudioDecoder.cpp:35</a></div></div>
+<div class="ttc" id="class_aulib_1_1_audio_resampler_html"><div class="ttname"><a href="class_aulib_1_1_audio_resampler.html">Aulib::AudioResampler</a></div><div class="ttdoc">Abstract base class for audio resamplers. </div><div class="ttdef"><b>Definition:</b> <a href="_audio_resampler_8h_source.html#l00033">AudioResampler.h:33</a></div></div>
+<div class="ttc" id="aulib_8h_html"><div class="ttname"><a href="aulib_8h.html">aulib.h</a></div></div>
 <div class="ttc" id="class_aulib_1_1_stream_html"><div class="ttname"><a href="class_aulib_1_1_stream.html">Aulib::Stream</a></div><div class="ttdoc">Abstract base class for playback streams. </div><div class="ttdef"><b>Definition:</b> <a href="_stream_8h_source.html#l00031">Stream.h:31</a></div></div>
 <div class="ttc" id="_stream_8h_html"><div class="ttname"><a href="_stream_8h.html">Stream.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

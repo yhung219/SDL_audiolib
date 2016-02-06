@@ -133,23 +133,23 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a20d7afa43b2594cbe4a7eef88ee98ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346331ae2493b9ab32541b3f96b777be"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_resampler.html#a346331ae2493b9ab32541b3f96b777be">currentChunkSize</a> () const </td></tr>
 <tr class="separator:a346331ae2493b9ab32541b3f96b777be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1175e4a3cf5e67996d4f2b23699bc32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_resampler.html#ae1175e4a3cf5e67996d4f2b23699bc32">resample</a> (float dst[], int dstLen)</td></tr>
-<tr class="memdesc:ae1175e4a3cf5e67996d4f2b23699bc32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills an output buffer with resampled audio samples.  <a href="#ae1175e4a3cf5e67996d4f2b23699bc32">More...</a><br /></td></tr>
-<tr class="separator:ae1175e4a3cf5e67996d4f2b23699bc32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9cb54c177087e4423b7c3cb43699886"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_resampler.html#aa9cb54c177087e4423b7c3cb43699886">resample</a> (float dst[], size_t dstLen)</td></tr>
+<tr class="memdesc:aa9cb54c177087e4423b7c3cb43699886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills an output buffer with resampled audio samples.  <a href="#aa9cb54c177087e4423b7c3cb43699886">More...</a><br /></td></tr>
+<tr class="separator:aa9cb54c177087e4423b7c3cb43699886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a73c8fd6942e27bd087523e988c79172e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_resampler.html#a73c8fd6942e27bd087523e988c79172e">adjustForOutputSpec</a> (unsigned dstRate, unsigned srcRate, unsigned channels)=0</td></tr>
 <tr class="memdesc:a73c8fd6942e27bd087523e988c79172e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change sample rate and amount of channels.  <a href="#a73c8fd6942e27bd087523e988c79172e">More...</a><br /></td></tr>
 <tr class="separator:a73c8fd6942e27bd087523e988c79172e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10aca8cec4df2471de18345873edeb67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_resampler.html#a10aca8cec4df2471de18345873edeb67">doResampling</a> (float dst[], const float src[], int &amp;dstLen, int &amp;srcLen)=0</td></tr>
-<tr class="separator:a10aca8cec4df2471de18345873edeb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a145112b1bc41f51bfbf102400e117fc0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_resampler.html#a145112b1bc41f51bfbf102400e117fc0">doResampling</a> (float dst[], const float src[], size_t &amp;dstLen, size_t &amp;srcLen)=0</td></tr>
+<tr class="separator:a145112b1bc41f51bfbf102400e117fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract base class for audio resamplers. </p>
 <p>This class receives audio from an <a class="el" href="class_aulib_1_1_audio_decoder.html" title="Abstract base class for audio decoders. ">AudioDecoder</a> and resamples it to the requested sample rate. </p>
 
-<p>Definition at line <a class="el" href="_audio_resampler_8h_source.html#l00032">32</a> of file <a class="el" href="_audio_resampler_8h_source.html">AudioResampler.h</a>.</p>
+<p>Definition at line <a class="el" href="_audio_resampler_8h_source.html#l00033">33</a> of file <a class="el" href="_audio_resampler_8h_source.html">AudioResampler.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3a72c986bcee0af8ef2851403cd7ca80"></a>
 <div class="memitem">
@@ -166,7 +166,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Constructs an audio resampler. </p>
 
-<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00216">216</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00201">201</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
 
 </div>
 </div>
@@ -191,7 +191,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00222">222</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00207">207</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
 
 </div>
 </div>
@@ -262,7 +262,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00260">260</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00244">244</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
 
 </div>
 </div>
@@ -279,7 +279,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00267">267</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00251">251</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
 
 </div>
 </div>
@@ -296,11 +296,11 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00253">253</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00237">237</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a10aca8cec4df2471de18345873edeb67"></a>
+<a class="anchor" id="a145112b1bc41f51bfbf102400e117fc0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -322,13 +322,13 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramtype">size_t &amp;&#160;</td>
           <td class="paramname"><em>dstLen</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramtype">size_t &amp;&#160;</td>
           <td class="paramname"><em>srcLen</em>&#160;</td>
         </tr>
         <tr>
@@ -352,16 +352,16 @@ Protected Member Functions</h2></td></tr>
 </pre><p>the function resamples 98 samples from 'src', resulting in 196 samples which are stored in 'dst', the function must set 'srcLen' to 98 and 'dstLen' to 196.</p>
 <p>So when implementing this function, you do not need to worry about using up all the available samples in 'src'. Simply resample as much audio from 'src' as you can in order to fill 'dst' as much as possible, and if there's anything left at the end that cannot be resampled, simply ignore it. </p>
 
-<p>Implemented in <a class="el" href="class_aulib_1_1_audio_resampler_sox.html#a4d437ef123c90a6963d02e158dcdba17">Aulib::AudioResamplerSox</a>, <a class="el" href="class_aulib_1_1_audio_resampler_speex.html#a39106ba88399383ea4e02097adcdbc5a">Aulib::AudioResamplerSpeex</a>, and <a class="el" href="class_aulib_1_1_audio_resampler_s_r_c.html#a70fa8bb7b697e5ef1f21280412aac927">Aulib::AudioResamplerSRC</a>.</p>
+<p>Implemented in <a class="el" href="class_aulib_1_1_audio_resampler_sox.html#a9963ae48328e58e3125ba76d5763c9bc">Aulib::AudioResamplerSox</a>, <a class="el" href="class_aulib_1_1_audio_resampler_speex.html#a816f035327be26a8c0b873d353c012cc">Aulib::AudioResamplerSpeex</a>, and <a class="el" href="class_aulib_1_1_audio_resampler_s_r_c.html#a01a48464321322ed2d6f9743361c7874">Aulib::AudioResamplerSRC</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae1175e4a3cf5e67996d4f2b23699bc32"></a>
+<a class="anchor" id="aa9cb54c177087e4423b7c3cb43699886"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Aulib::AudioResampler::resample </td>
+          <td class="memname">size_t Aulib::AudioResampler::resample </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>dst</em>[], </td>
@@ -369,7 +369,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>dstLen</em>&#160;</td>
         </tr>
         <tr>
@@ -390,7 +390,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The amount of samples that were stored in the buffer. This can be smaller than 'dstLen' if the decoder has no more samples left. </dd></dl>
 
-<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00274">274</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00258">258</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
 
 </div>
 </div>
@@ -416,7 +416,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00229">229</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00214">214</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
 
 </div>
 </div>
@@ -455,12 +455,12 @@ Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">dstRate</td><td>Wanted sample rate.</td></tr>
     <tr><td class="paramname">channels</td><td>Wanted amount of channels.</td></tr>
-    <tr><td class="paramname">chunkSize</td><td>Specifies how many samples per channel to resample at most in each call to the <a class="el" href="class_aulib_1_1_audio_resampler.html#ae1175e4a3cf5e67996d4f2b23699bc32" title="Fills an output buffer with resampled audio samples. ">resample()</a> function. It is recommended to set this to the same value that was used as buffer size in the call to <a class="el" href="namespace_aulib.html#ac82bf0fbde45439052c1ffbca293d668" title="Initializes the audio system. ">Aulib::init()</a>. </td></tr>
+    <tr><td class="paramname">chunkSize</td><td>Specifies how many samples per channel to resample at most in each call to the <a class="el" href="class_aulib_1_1_audio_resampler.html#aa9cb54c177087e4423b7c3cb43699886" title="Fills an output buffer with resampled audio samples. ">resample()</a> function. It is recommended to set this to the same value that was used as buffer size in the call to <a class="el" href="namespace_aulib.html#ac82bf0fbde45439052c1ffbca293d668" title="Initializes the audio system. ">Aulib::init()</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00238">238</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_resampler_8cpp_source.html#l00222">222</a> of file <a class="el" href="_audio_resampler_8cpp_source.html">AudioResampler.cpp</a>.</p>
 
 </div>
 </div>

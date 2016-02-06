@@ -129,8 +129,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae66a6ad8f31de5eecbcc9ea068a90796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7de4e439fa3d1d64c94b022f86c30a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder.html#aa7de4e439fa3d1d64c94b022f86c30a4">isOpen</a> () const </td></tr>
 <tr class="separator:aa7de4e439fa3d1d64c94b022f86c30a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac579b0fae971eb3653a2a69290ab9317"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder.html#ac579b0fae971eb3653a2a69290ab9317">decode</a> (float buf[], int len, bool &amp;callAgain)</td></tr>
-<tr class="separator:ac579b0fae971eb3653a2a69290ab9317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba1bf9dfdc0400f1e29f93afe69a03d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder.html#abba1bf9dfdc0400f1e29f93afe69a03d">decode</a> (float buf[], size_t len, bool &amp;callAgain)</td></tr>
+<tr class="separator:abba1bf9dfdc0400f1e29f93afe69a03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51f3af9fe1675de70615d9412d375f32"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder.html#a51f3af9fe1675de70615d9412d375f32">open</a> (SDL_RWops *rwops)=0</td></tr>
 <tr class="separator:a51f3af9fe1675de70615d9412d375f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee343c648e17853fd786f815be0dc90c"><td class="memItemLeft" align="right" valign="top">virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder.html#aee343c648e17853fd786f815be0dc90c">getChannels</a> () const  =0</td></tr>
@@ -155,8 +155,8 @@ Static Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aacd05ebca8af072f6db7582fb2fed7ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder.html#aacd05ebca8af072f6db7582fb2fed7ca">setIsOpen</a> (bool f)</td></tr>
 <tr class="separator:aacd05ebca8af072f6db7582fb2fed7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd26c25c3d744cca7db8675a6b1a53eb"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder.html#abd26c25c3d744cca7db8675a6b1a53eb">doDecoding</a> (float buf[], int len, bool &amp;callAgain)=0</td></tr>
-<tr class="separator:abd26c25c3d744cca7db8675a6b1a53eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2edf5ca4243e2b58992ba9256143c65"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_decoder.html#aa2edf5ca4243e2b58992ba9256143c65">doDecoding</a> (float buf[], size_t len, bool &amp;callAgain)=0</td></tr>
+<tr class="separator:aa2edf5ca4243e2b58992ba9256143c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract base class for audio decoders. </p>
@@ -176,7 +176,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_decoder_8cpp_source.html#l00056">56</a> of file <a class="el" href="_audio_decoder_8cpp_source.html">AudioDecoder.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_decoder_8cpp_source.html#l00055">55</a> of file <a class="el" href="_audio_decoder_8cpp_source.html">AudioDecoder.cpp</a>.</p>
 
 </div>
 </div>
@@ -201,17 +201,17 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_decoder_8cpp_source.html#l00061">61</a> of file <a class="el" href="_audio_decoder_8cpp_source.html">AudioDecoder.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_decoder_8cpp_source.html#l00060">60</a> of file <a class="el" href="_audio_decoder_8cpp_source.html">AudioDecoder.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac579b0fae971eb3653a2a69290ab9317"></a>
+<a class="anchor" id="abba1bf9dfdc0400f1e29f93afe69a03d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Aulib::AudioDecoder::decode </td>
+          <td class="memname">size_t Aulib::AudioDecoder::decode </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>buf</em>[], </td>
@@ -219,7 +219,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
@@ -236,7 +236,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_decoder_8cpp_source.html#l00154">154</a> of file <a class="el" href="_audio_decoder_8cpp_source.html">AudioDecoder.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_decoder_8cpp_source.html#l00152">152</a> of file <a class="el" href="_audio_decoder_8cpp_source.html">AudioDecoder.cpp</a>.</p>
 
 </div>
 </div>
@@ -262,7 +262,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_decoder_8cpp_source.html#l00069">69</a> of file <a class="el" href="_audio_decoder_8cpp_source.html">AudioDecoder.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_decoder_8cpp_source.html#l00067">67</a> of file <a class="el" href="_audio_decoder_8cpp_source.html">AudioDecoder.cpp</a>.</p>
 
 </div>
 </div>
@@ -288,11 +288,11 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_decoder_8cpp_source.html#l00077">77</a> of file <a class="el" href="_audio_decoder_8cpp_source.html">AudioDecoder.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_decoder_8cpp_source.html#l00075">75</a> of file <a class="el" href="_audio_decoder_8cpp_source.html">AudioDecoder.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abd26c25c3d744cca7db8675a6b1a53eb"></a>
+<a class="anchor" id="aa2edf5ca4243e2b58992ba9256143c65"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -300,7 +300,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int Aulib::AudioDecoder::doDecoding </td>
+          <td class="memname">virtual size_t Aulib::AudioDecoder::doDecoding </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>buf</em>[], </td>
@@ -308,7 +308,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
@@ -330,7 +330,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_aulib_1_1_audio_decoder_wildmidi.html#ad087b613fcc317767729b3423bffc661">Aulib::AudioDecoderWildmidi</a>, <a class="el" href="class_aulib_1_1_audio_decoder_bassmidi.html#a27bfa6ae62a4a9250fb713b0826637e5">Aulib::AudioDecoderBassmidi</a>, <a class="el" href="class_aulib_1_1_audio_decoder_fluid_synth.html#ae63eaad96db46bdeda40b0a6c0850b95">Aulib::AudioDecoderFluidSynth</a>, <a class="el" href="class_aulib_1_1_audio_decoder_mod_plug.html#ade771a74334c9708493dfa0b662e240f">Aulib::AudioDecoderModPlug</a>, <a class="el" href="class_aulib_1_1_audio_decoder_mpg123.html#a63986573b0d925b9a7f8fc056572a43a">Aulib::AudioDecoderMpg123</a>, <a class="el" href="class_aulib_1_1_audio_decoder_musepack.html#aedd6b18965acc8543ecba94c89deae78">Aulib::AudioDecoderMusepack</a>, <a class="el" href="class_aulib_1_1_audio_decoder_opus.html#a1887fb1c6983059390638dca6bc3608f">Aulib::AudioDecoderOpus</a>, <a class="el" href="class_aulib_1_1_audio_decoder_sndfile.html#a87a72091dedc7bebca4a0424bad5a9cf">Aulib::AudioDecoderSndfile</a>, and <a class="el" href="class_aulib_1_1_audio_decoder_vorbis.html#a1e9be859eca751e3e10c8c1d62b1d5f9">Aulib::AudioDecoderVorbis</a>.</p>
+<p>Implemented in <a class="el" href="class_aulib_1_1_audio_decoder_wildmidi.html#a9068622da022ba73896f1ad43269afb9">Aulib::AudioDecoderWildmidi</a>, <a class="el" href="class_aulib_1_1_audio_decoder_bassmidi.html#a8ef170aa1aa04d6a3c4149e96e19e76f">Aulib::AudioDecoderBassmidi</a>, <a class="el" href="class_aulib_1_1_audio_decoder_fluid_synth.html#a21d953716d6ab1e8a39cd032fa4a15e7">Aulib::AudioDecoderFluidSynth</a>, <a class="el" href="class_aulib_1_1_audio_decoder_mod_plug.html#a44c389b687187039e1b37143cea47206">Aulib::AudioDecoderModPlug</a>, <a class="el" href="class_aulib_1_1_audio_decoder_mpg123.html#a3d64866693cf3febfc58879a331f5674">Aulib::AudioDecoderMpg123</a>, <a class="el" href="class_aulib_1_1_audio_decoder_musepack.html#a21633b1cee3570b0bcb093d279cb5890">Aulib::AudioDecoderMusepack</a>, <a class="el" href="class_aulib_1_1_audio_decoder_opus.html#a6d858fcf66789d9337b2c8ad4288e4a4">Aulib::AudioDecoderOpus</a>, <a class="el" href="class_aulib_1_1_audio_decoder_sndfile.html#ac9e4f5939cded4bca6cb4e8d9bc40ef6">Aulib::AudioDecoderSndfile</a>, and <a class="el" href="class_aulib_1_1_audio_decoder_vorbis.html#a8ab18063043e55b274e9ee3e2b81c5f7">Aulib::AudioDecoderVorbis</a>.</p>
 
 </div>
 </div>
@@ -422,7 +422,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_decoder_8cpp_source.html#l00126">126</a> of file <a class="el" href="_audio_decoder_8cpp_source.html">AudioDecoder.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_decoder_8cpp_source.html#l00124">124</a> of file <a class="el" href="_audio_decoder_8cpp_source.html">AudioDecoder.cpp</a>.</p>
 
 </div>
 </div>
@@ -499,7 +499,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_aulib_1_1_audio_decoder_wildmidi.html#ae229bc0f3863541678acbb8b93e79ae9">Aulib::AudioDecoderWildmidi</a>, <a class="el" href="class_aulib_1_1_audio_decoder_bassmidi.html#a638ffed5e576d0d23f59bf99ffa7b840">Aulib::AudioDecoderBassmidi</a>, <a class="el" href="class_aulib_1_1_audio_decoder_fluid_synth.html#a4da5994c83cf12ac03f6f6f467148541">Aulib::AudioDecoderFluidSynth</a>, <a class="el" href="class_aulib_1_1_audio_decoder_mod_plug.html#a9061922ef7cf24df607dbed87661d8a9">Aulib::AudioDecoderModPlug</a>, <a class="el" href="class_aulib_1_1_audio_decoder_mpg123.html#a1d2354301a9f2792d6305fde9fcd1c6e">Aulib::AudioDecoderMpg123</a>, <a class="el" href="class_aulib_1_1_audio_decoder_musepack.html#af71bc22c3614f42ff4e0cde20295d35d">Aulib::AudioDecoderMusepack</a>, <a class="el" href="class_aulib_1_1_audio_decoder_opus.html#a6b34fc324e9084b18c1d777c45fa7633">Aulib::AudioDecoderOpus</a>, <a class="el" href="class_aulib_1_1_audio_decoder_sndfile.html#a767e7d3fbdfa0156ec211f225342730f">Aulib::AudioDecoderSndfile</a>, and <a class="el" href="class_aulib_1_1_audio_decoder_vorbis.html#aa8a24b68eaf8860e2b2a7f4051a9c1c6">Aulib::AudioDecoderVorbis</a>.</p>
+<p>Implemented in <a class="el" href="class_aulib_1_1_audio_decoder_wildmidi.html#ae229bc0f3863541678acbb8b93e79ae9">Aulib::AudioDecoderWildmidi</a>, <a class="el" href="class_aulib_1_1_audio_decoder_bassmidi.html#a638ffed5e576d0d23f59bf99ffa7b840">Aulib::AudioDecoderBassmidi</a>, <a class="el" href="class_aulib_1_1_audio_decoder_fluid_synth.html#a4da5994c83cf12ac03f6f6f467148541">Aulib::AudioDecoderFluidSynth</a>, <a class="el" href="class_aulib_1_1_audio_decoder_mod_plug.html#a9061922ef7cf24df607dbed87661d8a9">Aulib::AudioDecoderModPlug</a>, <a class="el" href="class_aulib_1_1_audio_decoder_mpg123.html#a1d2354301a9f2792d6305fde9fcd1c6e">Aulib::AudioDecoderMpg123</a>, <a class="el" href="class_aulib_1_1_audio_decoder_musepack.html#a37214b55aab3bfc57559109e812bb68a">Aulib::AudioDecoderMusepack</a>, <a class="el" href="class_aulib_1_1_audio_decoder_opus.html#a1076614ac29de0549b365bf24dcce3b6">Aulib::AudioDecoderOpus</a>, <a class="el" href="class_aulib_1_1_audio_decoder_sndfile.html#a767e7d3fbdfa0156ec211f225342730f">Aulib::AudioDecoderSndfile</a>, and <a class="el" href="class_aulib_1_1_audio_decoder_vorbis.html#ad21bd5efe01259ce845aa736cabf8331">Aulib::AudioDecoderVorbis</a>.</p>
 
 </div>
 </div>
@@ -525,7 +525,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_decoder_8cpp_source.html#l00179">179</a> of file <a class="el" href="_audio_decoder_8cpp_source.html">AudioDecoder.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_audio_decoder_8cpp_source.html#l00175">175</a> of file <a class="el" href="_audio_decoder_8cpp_source.html">AudioDecoder.cpp</a>.</p>
 
 </div>
 </div>
