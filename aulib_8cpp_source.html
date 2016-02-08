@@ -133,14 +133,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">int</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespace_aulib.html#ac82bf0fbde45439052c1ffbca293d668">   43</a></span>&#160;<a class="code" href="namespace_aulib.html#ac82bf0fbde45439052c1ffbca293d668">Aulib::init</a>(<span class="keywordtype">int</span> freq, <span class="keywordtype">int</span> format, <span class="keywordtype">int</span> channels, <span class="keywordtype">int</span> bufferSize)</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespace_aulib.html#ad3c742f54c43b0c381a1ed8a44c79b1d">   43</a></span>&#160;<a class="code" href="namespace_aulib.html#ad3c742f54c43b0c381a1ed8a44c79b1d">Aulib::init</a>(<span class="keywordtype">int</span> freq, SDL_AudioFormat format, Uint8 channels, Uint16 bufferSize)</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (SDL_InitSubSystem(SDL_INIT_AUDIO) != 0) {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// We only support mono and stereo at this point.</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    channels = std::min(std::max(1, channels), 2);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    channels = std::min(std::max((Uint8)1, channels), (Uint8)2);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    SDL_AudioSpec requestedSpec;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    memset(&amp;requestedSpec, 0, <span class="keyword">sizeof</span>(::SDL_AudioSpec));</div>
@@ -182,56 +182,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="aulib__debug_8h.html#ad83ac0bb881dcd516165a11bf759fe1c">AM_debugPrintLn</a>(<span class="stringliteral">&quot;U16MSB&quot;</span>);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            AudioStream_priv::fSampleConverter = Aulib::floatToU16MSB;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#if SDL_VERSION_ATLEAST(1,3,0)</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">case</span> AUDIO_S32LSB:</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="aulib__debug_8h.html#ad83ac0bb881dcd516165a11bf759fe1c">AM_debugPrintLn</a>(<span class="stringliteral">&quot;S32LSB&quot;</span>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            AudioStream_priv::fSampleConverter = Aulib::floatToS32LSB;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">case</span> AUDIO_F32LSB:</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <a class="code" href="aulib__debug_8h.html#ad83ac0bb881dcd516165a11bf759fe1c">AM_debugPrintLn</a>(<span class="stringliteral">&quot;F32LSB&quot;</span>);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            AudioStream_priv::fSampleConverter = Aulib::floatToFloat;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="aulib__debug_8h.html#adf1cdc5bec8e1ed4bc52650041fe73f1">AM_warnLn</a>(<span class="stringliteral">&quot;Unknown audio format spec: &quot;</span> &lt;&lt; AudioStream_priv::fAudioSpec.format);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="namespace_aulib.html#afe398e73c4ed29fbf5fcaf2c20d07eee">Aulib::quit</a>();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    SDL_PauseAudio(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    gInitialized = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::atexit(<a class="code" href="namespace_aulib.html#afe398e73c4ed29fbf5fcaf2c20d07eee">Aulib::quit</a>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="namespace_aulib.html#afe398e73c4ed29fbf5fcaf2c20d07eee">  116</a></span>&#160;<a class="code" href="namespace_aulib.html#afe398e73c4ed29fbf5fcaf2c20d07eee">Aulib::quit</a>()</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">if</span> (not gInitialized) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; AudioStream_priv::fStreamList.size(); ++i) {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (AudioStream_priv::fStreamList[i]-&gt;isPlaying()) {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            AudioStream_priv::fStreamList[i]-&gt;stop();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    SDL_QuitSubSystem(SDL_INIT_AUDIO);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    AudioStream_priv::fSampleConverter = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    gInitialized = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keyword">delete</span>[] Aulib::AudioStream_priv::fFinalMixBuf;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">delete</span>[] Aulib::AudioStream_priv::fStrmBuf;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keyword">const</span> SDL_AudioSpec&amp;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;Aulib::spec()</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;{</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">return</span> AudioStream_priv::fAudioSpec;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
-<div class="ttc" id="namespace_aulib_html_afe398e73c4ed29fbf5fcaf2c20d07eee"><div class="ttname"><a href="namespace_aulib.html#afe398e73c4ed29fbf5fcaf2c20d07eee">Aulib::quit</a></div><div class="ttdeci">void quit()</div><div class="ttdoc">Shuts down the SDL_audiolib library. </div><div class="ttdef"><b>Definition:</b> <a href="aulib_8cpp_source.html#l00116">aulib.cpp:116</a></div></div>
-<div class="ttc" id="namespace_aulib_html_ac82bf0fbde45439052c1ffbca293d668"><div class="ttname"><a href="namespace_aulib.html#ac82bf0fbde45439052c1ffbca293d668">Aulib::init</a></div><div class="ttdeci">int init(int freq, int format, int channels, int bufferSize)</div><div class="ttdoc">Initializes the audio system. </div><div class="ttdef"><b>Definition:</b> <a href="aulib_8cpp_source.html#l00043">aulib.cpp:43</a></div></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">case</span> AUDIO_S32LSB:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <a class="code" href="aulib__debug_8h.html#ad83ac0bb881dcd516165a11bf759fe1c">AM_debugPrintLn</a>(<span class="stringliteral">&quot;S32LSB&quot;</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            AudioStream_priv::fSampleConverter = Aulib::floatToS32LSB;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">case</span> AUDIO_F32LSB:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="aulib__debug_8h.html#ad83ac0bb881dcd516165a11bf759fe1c">AM_debugPrintLn</a>(<span class="stringliteral">&quot;F32LSB&quot;</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            AudioStream_priv::fSampleConverter = Aulib::floatToFloat;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="aulib__debug_8h.html#adf1cdc5bec8e1ed4bc52650041fe73f1">AM_warnLn</a>(<span class="stringliteral">&quot;Unknown audio format spec: &quot;</span> &lt;&lt; AudioStream_priv::fAudioSpec.format);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <a class="code" href="namespace_aulib.html#afe398e73c4ed29fbf5fcaf2c20d07eee">Aulib::quit</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    SDL_PauseAudio(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    gInitialized = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    std::atexit(<a class="code" href="namespace_aulib.html#afe398e73c4ed29fbf5fcaf2c20d07eee">Aulib::quit</a>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="namespace_aulib.html#afe398e73c4ed29fbf5fcaf2c20d07eee">  114</a></span>&#160;<a class="code" href="namespace_aulib.html#afe398e73c4ed29fbf5fcaf2c20d07eee">Aulib::quit</a>()</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span> (not gInitialized) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; AudioStream_priv::fStreamList.size(); ++i) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span> (AudioStream_priv::fStreamList[i]-&gt;isPlaying()) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            AudioStream_priv::fStreamList[i]-&gt;stop();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    SDL_QuitSubSystem(SDL_INIT_AUDIO);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    AudioStream_priv::fSampleConverter = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    gInitialized = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">delete</span>[] Aulib::AudioStream_priv::fFinalMixBuf;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">delete</span>[] Aulib::AudioStream_priv::fStrmBuf;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">const</span> SDL_AudioSpec&amp;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;Aulib::spec()</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> AudioStream_priv::fAudioSpec;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="ttc" id="namespace_aulib_html_afe398e73c4ed29fbf5fcaf2c20d07eee"><div class="ttname"><a href="namespace_aulib.html#afe398e73c4ed29fbf5fcaf2c20d07eee">Aulib::quit</a></div><div class="ttdeci">void quit()</div><div class="ttdoc">Shuts down the SDL_audiolib library. </div><div class="ttdef"><b>Definition:</b> <a href="aulib_8cpp_source.html#l00114">aulib.cpp:114</a></div></div>
 <div class="ttc" id="sampleconv_8h_html"><div class="ttname"><a href="sampleconv_8h.html">sampleconv.h</a></div></div>
+<div class="ttc" id="namespace_aulib_html_ad3c742f54c43b0c381a1ed8a44c79b1d"><div class="ttname"><a href="namespace_aulib.html#ad3c742f54c43b0c381a1ed8a44c79b1d">Aulib::init</a></div><div class="ttdeci">int init(int freq, SDL_AudioFormat format, Uint8 channels, Uint16 bufferSize)</div><div class="ttdoc">Initializes the audio system. </div><div class="ttdef"><b>Definition:</b> <a href="aulib_8cpp_source.html#l00043">aulib.cpp:43</a></div></div>
 <div class="ttc" id="audiostream__p_8h_html"><div class="ttname"><a href="audiostream__p_8h.html">audiostream_p.h</a></div></div>
 <div class="ttc" id="aulib__debug_8h_html_adf1cdc5bec8e1ed4bc52650041fe73f1"><div class="ttname"><a href="aulib__debug_8h.html#adf1cdc5bec8e1ed4bc52650041fe73f1">AM_warnLn</a></div><div class="ttdeci">#define AM_warnLn(x)</div><div class="ttdef"><b>Definition:</b> <a href="aulib__debug_8h_source.html#l00037">aulib_debug.h:37</a></div></div>
 <div class="ttc" id="_audio_stream_8h_html"><div class="ttname"><a href="_audio_stream_8h.html">AudioStream.h</a></div></div>

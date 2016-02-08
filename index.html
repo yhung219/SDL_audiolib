@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">SDL_audiolib Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>With SDL_audiolib, you can play many forms of audio files in your programs. It uses <a href="http://www.libsdl.org">SDL</a> to access the audio hardware (either SDL1 or SDL2 are supported), and uses existing libraries to handle the decoding of various audio formats.</p>
+<div class="textblock"><p>With SDL_audiolib, you can play many forms of audio files in your programs. It uses <a href="http://www.libsdl.org">SDL</a> to access the audio hardware, and uses existing libraries to handle the decoding of various audio formats.</p>
 <p>Only mono and stereo output are supported.</p>
 <p>As of right now, only a C++ API is provided, and is not finalized yet. That means if you use this, expect API breaking changes every day. A C API will hopefully also be provided in the future.</p>
 <p>The provided decoders are:</p>
@@ -139,7 +139,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Initialize the SDL_audiolib library. Set the output sample rate to 96kHz, the audio format</span></div>
 <div class="line">    <span class="comment">// to 16-bit signed, use 2 output channels (stereo), and a 4kB output buffer.</span></div>
-<div class="line">    <span class="keywordflow">if</span> (<a class="code" href="namespace_aulib.html#ac82bf0fbde45439052c1ffbca293d668">Aulib::init</a>(96000, AUDIO_S16SYS, 2, 4096) != 0) {</div>
+<div class="line">    <span class="keywordflow">if</span> (<a class="code" href="namespace_aulib.html#ad3c742f54c43b0c381a1ed8a44c79b1d">Aulib::init</a>(96000, AUDIO_S16SYS, 2, 4096) != 0) {</div>
 <div class="line">        std::cerr &lt;&lt; <span class="stringliteral">&quot;Couldn&#39;t open audio: &quot;</span> &lt;&lt; SDL_GetError() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">        <span class="keywordflow">return</span> 1;</div>
 <div class="line">    }</div>

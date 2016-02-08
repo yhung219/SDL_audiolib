@@ -121,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="aulib__debug_8h.html">aulib_debug.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;void (*Aulib::AudioStream_priv::fSampleConverter)(Uint8[], <span class="keywordtype">float</span>[], int) = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;void (*Aulib::AudioStream_priv::fSampleConverter)(Uint8[], <span class="keywordtype">float</span>[], size_t) = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;SDL_AudioSpec Aulib::AudioStream_priv::fAudioSpec;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;std::vector&lt;Aulib::AudioStream*&gt; Aulib::AudioStream_priv::fStreamList;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">float</span>* Aulib::AudioStream_priv::fFinalMixBuf = <span class="keyword">nullptr</span>;</div>

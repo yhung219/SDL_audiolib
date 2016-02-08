@@ -94,7 +94,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">aulib.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="aulib__global_8h_source.html">aulib_global.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;SDL_audio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="aulib__global_8h_source.html">aulib_global.h</a>&quot;</code><br />
 </div>
 <p><a href="aulib_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -105,9 +106,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac82bf0fbde45439052c1ffbca293d668"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_aulib.html#ac82bf0fbde45439052c1ffbca293d668">Aulib::init</a> (int freq, int format, int channels, int bufferSize)</td></tr>
-<tr class="memdesc:ac82bf0fbde45439052c1ffbca293d668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the audio system.  <a href="namespace_aulib.html#ac82bf0fbde45439052c1ffbca293d668">More...</a><br /></td></tr>
-<tr class="separator:ac82bf0fbde45439052c1ffbca293d668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c742f54c43b0c381a1ed8a44c79b1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_aulib.html#ad3c742f54c43b0c381a1ed8a44c79b1d">Aulib::init</a> (int freq, SDL_AudioFormat format, Uint8 channels, Uint16 bufferSize)</td></tr>
+<tr class="memdesc:ad3c742f54c43b0c381a1ed8a44c79b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the audio system.  <a href="namespace_aulib.html#ad3c742f54c43b0c381a1ed8a44c79b1d">More...</a><br /></td></tr>
+<tr class="separator:ad3c742f54c43b0c381a1ed8a44c79b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe398e73c4ed29fbf5fcaf2c20d07eee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_aulib.html#afe398e73c4ed29fbf5fcaf2c20d07eee">Aulib::quit</a> ()</td></tr>
 <tr class="memdesc:afe398e73c4ed29fbf5fcaf2c20d07eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts down the SDL_audiolib library.  <a href="namespace_aulib.html#afe398e73c4ed29fbf5fcaf2c20d07eee">More...</a><br /></td></tr>
 <tr class="separator:afe398e73c4ed29fbf5fcaf2c20d07eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
