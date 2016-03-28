@@ -7,7 +7,7 @@ var searchData=
   ['am_5fwarn',['AM_warn',['../aulib__debug_8h.html#a01021b3e2a97d6dff595da8e4658b264',1,'aulib_debug.h']]],
   ['am_5fwarnln',['AM_warnLn',['../aulib__debug_8h.html#adf1cdc5bec8e1ed4bc52650041fe73f1',1,'aulib_debug.h']]],
   ['audiodecoder',['AudioDecoder',['../class_aulib_1_1_audio_decoder.html',1,'Aulib']]],
-  ['audiodecoder',['AudioDecoder',['../class_aulib_1_1_audio_decoder.html#a32ec9abeb7ce20262523a108280c8a10',1,'Aulib::AudioDecoder']]],
+  ['audiodecoder',['AudioDecoder',['../class_aulib_1_1_audio_decoder.html#a32ec9abeb7ce20262523a108280c8a10',1,'Aulib::AudioDecoder::AudioDecoder()'],['../class_aulib_1_1_audio_decoder.html#afcc6f5fe89256d5fa736463e681a6017',1,'Aulib::AudioDecoder::AudioDecoder(const AudioDecoder &amp;)=delete']]],
   ['audiodecoder_2ecpp',['AudioDecoder.cpp',['../_audio_decoder_8cpp.html',1,'']]],
   ['audiodecoder_2eh',['AudioDecoder.h',['../_audio_decoder_8h.html',1,'']]],
   ['audiodecoderbassmidi',['AudioDecoderBassmidi',['../class_aulib_1_1_audio_decoder_bassmidi.html',1,'Aulib']]],
@@ -46,7 +46,7 @@ var searchData=
   ['audiodecoderwildmidi',['AudioDecoderWildmidi',['../class_aulib_1_1_audio_decoder_wildmidi.html',1,'Aulib']]],
   ['audiodecoderwildmidi_2ecpp',['AudioDecoderWildmidi.cpp',['../_audio_decoder_wildmidi_8cpp.html',1,'']]],
   ['audiodecoderwildmidi_2eh',['AudioDecoderWildmidi.h',['../_audio_decoder_wildmidi_8h.html',1,'']]],
-  ['audioresampler',['AudioResampler',['../class_aulib_1_1_audio_resampler.html#a3a72c986bcee0af8ef2851403cd7ca80',1,'Aulib::AudioResampler']]],
+  ['audioresampler',['AudioResampler',['../class_aulib_1_1_audio_resampler.html#a3a72c986bcee0af8ef2851403cd7ca80',1,'Aulib::AudioResampler::AudioResampler()'],['../class_aulib_1_1_audio_resampler.html#a63959e23957aa26faaca4036b2b55be1',1,'Aulib::AudioResampler::AudioResampler(const AudioResampler &amp;)=delete']]],
   ['audioresampler',['AudioResampler',['../class_aulib_1_1_audio_resampler.html',1,'Aulib']]],
   ['audioresampler_2ecpp',['AudioResampler.cpp',['../_audio_resampler_8cpp.html',1,'']]],
   ['audioresampler_2eh',['AudioResampler.h',['../_audio_resampler_8h.html',1,'']]],
@@ -62,7 +62,7 @@ var searchData=
   ['audioresamplersrc',['AudioResamplerSRC',['../class_aulib_1_1_audio_resampler_s_r_c.html',1,'Aulib']]],
   ['audioresamplersrc_2ecpp',['AudioResamplerSrc.cpp',['../_audio_resampler_src_8cpp.html',1,'']]],
   ['audioresamplersrc_2eh',['AudioResamplerSrc.h',['../_audio_resampler_src_8h.html',1,'']]],
-  ['audiostream',['AudioStream',['../class_aulib_1_1_audio_stream.html#a1df6e29dabfb90ea5651b16d170acfb6',1,'Aulib::AudioStream::AudioStream(const char *filename, class AudioDecoder *decoder, class AudioResampler *resampler)'],['../class_aulib_1_1_audio_stream.html#a2fac5cf21725586748ede22b3dea1029',1,'Aulib::AudioStream::AudioStream(SDL_RWops *rwops, class AudioDecoder *decoder, class AudioResampler *resampler, bool closeRw)']]],
+  ['audiostream',['AudioStream',['../class_aulib_1_1_audio_stream.html#a1df6e29dabfb90ea5651b16d170acfb6',1,'Aulib::AudioStream::AudioStream(const char *filename, class AudioDecoder *decoder, class AudioResampler *resampler)'],['../class_aulib_1_1_audio_stream.html#a2fac5cf21725586748ede22b3dea1029',1,'Aulib::AudioStream::AudioStream(SDL_RWops *rwops, class AudioDecoder *decoder, class AudioResampler *resampler, bool closeRw)'],['../class_aulib_1_1_audio_stream.html#a39c79d1197e573d1b4b069b028f17ddd',1,'Aulib::AudioStream::AudioStream(const AudioStream &amp;)=delete']]],
   ['audiostream',['AudioStream',['../class_aulib_1_1_audio_stream.html',1,'Aulib']]],
   ['audiostream_2ecpp',['AudioStream.cpp',['../_audio_stream_8cpp.html',1,'']]],
   ['audiostream_2eh',['AudioStream.h',['../_audio_stream_8h.html',1,'']]],
@@ -77,5 +77,5 @@ var searchData=
   ['aulib_5fversion_2eh',['aulib_version.h',['../aulib__version_8h.html',1,'']]],
   ['aulib_5fversion_5fcheck',['AULIB_VERSION_CHECK',['../aulib__version_8h.html#a5dcc9a2c35c0d94b722f9e669517ada5',1,'aulib_version.h']]],
   ['aulib_5fversion_5fstr',['AULIB_VERSION_STR',['../aulib__version_8h.html#a2030bb83fd008c5290e2f8087a622092',1,'aulib_version.h']]],
-  ['init',['init',['../class_aulib_1_1_audio_stream.html#a40f5383791842b8f6dc888ef7f7a63f8',1,'Aulib::AudioStream']]]
+  ['init',['init',['../class_aulib_1_1_audio_stream.html#a0383724983fbd849604a9c264ccbe9f7',1,'Aulib::AudioStream']]]
 ];
