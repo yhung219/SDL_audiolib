@@ -1,7 +1,7 @@
 var searchData=
 [
   ['callback',['Callback',['../class_aulib_1_1_stream.html#a5d4efd0e9dce059242d0d034a937370d',1,'Aulib::Stream']]],
-  ['currentchannels',['currentChannels',['../class_aulib_1_1_audio_resampler.html#a20d7afa43b2594cbe4a7eef88ee98ec8',1,'Aulib::AudioResampler']]],
-  ['currentchunksize',['currentChunkSize',['../class_aulib_1_1_audio_resampler.html#a346331ae2493b9ab32541b3f96b777be',1,'Aulib::AudioResampler']]],
-  ['currentrate',['currentRate',['../class_aulib_1_1_audio_resampler.html#a7a863d8f3b12aa69eb4adf7a8daae983',1,'Aulib::AudioResampler']]]
+  ['currentchannels',['currentChannels',['../class_aulib_1_1_audio_resampler.html#adfbd81a8b2db4b053bcecdc447690838',1,'Aulib::AudioResampler']]],
+  ['currentchunksize',['currentChunkSize',['../class_aulib_1_1_audio_resampler.html#a78abc4b20c7bd2d5b93bf4524e2c49f4',1,'Aulib::AudioResampler']]],
+  ['currentrate',['currentRate',['../class_aulib_1_1_audio_resampler.html#a8046307258d9bf35c695cd0e1303b750',1,'Aulib::AudioResampler']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['volume',['volume',['../class_aulib_1_1_audio_stream.html#a88529be6719753a46a21fadbff1358d1',1,'Aulib::AudioStream::volume()'],['../class_aulib_1_1_stream.html#aeb59c1194bce0284d8031cf310c7b2de',1,'Aulib::Stream::volume()']]]
+  ['unsetfinishcallback',['unsetFinishCallback',['../class_aulib_1_1_stream.html#af90f16af5d12e56738ad99ebbb09f010',1,'Aulib::Stream']]],
+  ['unsetloopcallback',['unsetLoopCallback',['../class_aulib_1_1_stream.html#ad7981540d2c4a74eae8c4d3d81de5890',1,'Aulib::Stream']]]
 ];
