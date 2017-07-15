@@ -7,6 +7,7 @@ var searchData=
   ['audiodecodermodplug',['AudioDecoderModPlug',['../class_aulib_1_1_audio_decoder_mod_plug.html#a7bfcad2622dc7ce41534738328cf71fc',1,'Aulib::AudioDecoderModPlug']]],
   ['audiodecodermpg123',['AudioDecoderMpg123',['../class_aulib_1_1_audio_decoder_mpg123.html#ad4d30f223609682b63670a3e5d4b8375',1,'Aulib::AudioDecoderMpg123']]],
   ['audiodecodermusepack',['AudioDecoderMusepack',['../class_aulib_1_1_audio_decoder_musepack.html#a92088210526d095c8d7450aa0aba8ece',1,'Aulib::AudioDecoderMusepack']]],
+  ['audiodecoderopenmpt',['AudioDecoderOpenmpt',['../class_aulib_1_1_audio_decoder_openmpt.html#a0e9ef02f0f6d8a0eafb33cff7251fc86',1,'Aulib::AudioDecoderOpenmpt']]],
   ['audiodecoderopus',['AudioDecoderOpus',['../class_aulib_1_1_audio_decoder_opus.html#a772e77f31505c2badb6e84a2106ead85',1,'Aulib::AudioDecoderOpus']]],
   ['audiodecodersndfile',['AudioDecoderSndfile',['../class_aulib_1_1_audio_decoder_sndfile.html#af6182ffe7f9e1bfb7471a2e2ecea87a3',1,'Aulib::AudioDecoderSndfile']]],
   ['audiodecodervorbis',['AudioDecoderVorbis',['../class_aulib_1_1_audio_decoder_vorbis.html#a5385a510c4cdd6a1be57e878e9f0a19a',1,'Aulib::AudioDecoderVorbis']]],

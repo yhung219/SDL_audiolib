@@ -6,6 +6,7 @@ var searchData=
   ['audiodecodermodplug',['AudioDecoderModPlug',['../class_aulib_1_1_audio_decoder_mod_plug.html',1,'Aulib']]],
   ['audiodecodermpg123',['AudioDecoderMpg123',['../class_aulib_1_1_audio_decoder_mpg123.html',1,'Aulib']]],
   ['audiodecodermusepack',['AudioDecoderMusepack',['../class_aulib_1_1_audio_decoder_musepack.html',1,'Aulib']]],
+  ['audiodecoderopenmpt',['AudioDecoderOpenmpt',['../class_aulib_1_1_audio_decoder_openmpt.html',1,'Aulib']]],
   ['audiodecoderopus',['AudioDecoderOpus',['../class_aulib_1_1_audio_decoder_opus.html',1,'Aulib']]],
   ['audiodecodersndfile',['AudioDecoderSndfile',['../class_aulib_1_1_audio_decoder_sndfile.html',1,'Aulib']]],
   ['audiodecodervorbis',['AudioDecoderVorbis',['../class_aulib_1_1_audio_decoder_vorbis.html',1,'Aulib']]],

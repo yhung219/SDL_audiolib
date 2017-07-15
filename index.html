@@ -85,8 +85,11 @@ $(function() {
 <p class="startli">It can decode many various audio formats, including FLAC, WAV, AIFF/AIFC, AU/SND, IFF/SVX, VOC, CAF and Ogg/Vorbis.</p>
 <p class="startli">Note that even though Ogg/Vorbis is supported in this decoder, it is highly recommended to use <a class="el" href="class_aulib_1_1_audio_decoder_vorbis.html" title="libvorbisfile decoder. ">Aulib::AudioDecoderVorbis</a> instead, since the libsndfile-based decoder does not handle all types of Vorbis audio (streams with sample rate changes in the middle of them, for example.)</p>
 </li>
+<li><p class="startli"><a class="el" href="class_aulib_1_1_audio_decoder_openmpt.html" title="OpenMPT decoder. ">Aulib::AudioDecoderOpenmpt</a> - uses <a href="https://lib.openmpt.org">libopenmpt</a></p>
+<p class="startli">It can render various MOD file formats, like MOD, XM, S3M, IT, etc. This is the recommended decoder for MOD audio files.</p>
+</li>
 <li><p class="startli"><a class="el" href="class_aulib_1_1_audio_decoder_mod_plug.html" title="ModPlug decoder. ">Aulib::AudioDecoderModPlug</a> - uses <a href="http://modplug-xmms.sourceforge.net">libmodplug</a></p>
-<p class="startli">It can render various MOD file formats, like MOD, XM, S3M, IT, etc.</p>
+<p class="startli">It can render various MOD file formats, like MOD, XM, S3M, IT, etc. Note that libmodplug has been superseded by libopenmpt.</p>
 </li>
 <li><p class="startli"><a class="el" href="class_aulib_1_1_audio_decoder_fluid_synth.html" title="FluidSynth decoder. ">Aulib::AudioDecoderFluidSynth</a> - uses <a href="http://fluidsynth.elementsofsound.org">FluidSynth</a></p>
 <p class="startli">It can render MIDI files using SoundFont (SF2) instrument files.</p>
