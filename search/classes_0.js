@@ -11,6 +11,7 @@ var searchData=
   ['audiodecodersndfile',['AudioDecoderSndfile',['../class_aulib_1_1_audio_decoder_sndfile.html',1,'Aulib']]],
   ['audiodecodervorbis',['AudioDecoderVorbis',['../class_aulib_1_1_audio_decoder_vorbis.html',1,'Aulib']]],
   ['audiodecoderwildmidi',['AudioDecoderWildmidi',['../class_aulib_1_1_audio_decoder_wildmidi.html',1,'Aulib']]],
+  ['audiodecoderxmp',['AudioDecoderXmp',['../class_aulib_1_1_audio_decoder_xmp.html',1,'Aulib']]],
   ['audioresampler',['AudioResampler',['../class_aulib_1_1_audio_resampler.html',1,'Aulib']]],
   ['audioresamplersox',['AudioResamplerSox',['../class_aulib_1_1_audio_resampler_sox.html',1,'Aulib']]],
   ['audioresamplerspeex',['AudioResamplerSpeex',['../class_aulib_1_1_audio_resampler_speex.html',1,'Aulib']]],

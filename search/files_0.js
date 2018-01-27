@@ -22,6 +22,8 @@ var searchData=
   ['audiodecodervorbis_2eh',['AudioDecoderVorbis.h',['../_audio_decoder_vorbis_8h.html',1,'']]],
   ['audiodecoderwildmidi_2ecpp',['AudioDecoderWildmidi.cpp',['../_audio_decoder_wildmidi_8cpp.html',1,'']]],
   ['audiodecoderwildmidi_2eh',['AudioDecoderWildmidi.h',['../_audio_decoder_wildmidi_8h.html',1,'']]],
+  ['audiodecoderxmp_2ecpp',['AudioDecoderXmp.cpp',['../_audio_decoder_xmp_8cpp.html',1,'']]],
+  ['audiodecoderxmp_2eh',['AudioDecoderXmp.h',['../_audio_decoder_xmp_8h.html',1,'']]],
   ['audioresampler_2ecpp',['AudioResampler.cpp',['../_audio_resampler_8cpp.html',1,'']]],
   ['audioresampler_2eh',['AudioResampler.h',['../_audio_resampler_8h.html',1,'']]],
   ['audioresamplersox_2ecpp',['AudioResamplerSox.cpp',['../_audio_resampler_sox_8cpp.html',1,'']]],
