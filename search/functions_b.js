@@ -6,6 +6,7 @@ var searchData=
   ['setfinishcallback',['setFinishCallback',['../class_aulib_1_1_stream.html#ad9bec49b79dea41d291dde8a32b7fec4',1,'Aulib::Stream']]],
   ['setisopen',['setIsOpen',['../class_aulib_1_1_audio_decoder.html#aacd05ebca8af072f6db7582fb2fed7ca',1,'Aulib::AudioDecoder']]],
   ['setloopcallback',['setLoopCallback',['../class_aulib_1_1_stream.html#a4507a78ff218ba2bf1311a791c074adf',1,'Aulib::Stream']]],
+  ['setquality',['setQuality',['../class_aulib_1_1_audio_resampler_speex.html#a05f8c7461111481f21e3364db7e8895f',1,'Aulib::AudioResamplerSpeex']]],
   ['setspec',['setSpec',['../class_aulib_1_1_audio_resampler.html#a4049b01b45857b967d619b0f159427f0',1,'Aulib::AudioResampler']]],
   ['setvolume',['setVolume',['../class_aulib_1_1_audio_stream.html#adee375a72c8439982f2e15389a609ad1',1,'Aulib::AudioStream::setVolume()'],['../class_aulib_1_1_stream.html#a2d949a9cc54495740e2db916ffc97098',1,'Aulib::Stream::setVolume()']]],
   ['stop',['stop',['../class_aulib_1_1_audio_stream.html#a1aeac77d83f0090f165f48043390e267',1,'Aulib::AudioStream::stop()'],['../class_aulib_1_1_stream.html#abb1cfee631ea929bf65382c0f7ce67c4',1,'Aulib::Stream::stop()']]],

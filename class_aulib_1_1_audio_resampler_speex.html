@@ -92,10 +92,14 @@ Inheritance diagram for Aulib::AudioResamplerSpeex:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a22852f02a9082adb3fa29ae0dc4cdbf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_resampler_speex.html#a22852f02a9082adb3fa29ae0dc4cdbf8">AudioResamplerSpeex</a> ()</td></tr>
-<tr class="separator:a22852f02a9082adb3fa29ae0dc4cdbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2660b3cfed8f745d2eeb6ac6a5e51d2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_resampler_speex.html#a2660b3cfed8f745d2eeb6ac6a5e51d2b">AudioResamplerSpeex</a> (int <a class="el" href="class_aulib_1_1_audio_resampler_speex.html#a6bd050afff0a45f6b0f549a66ce0f5d8">quality</a>=5)</td></tr>
+<tr class="separator:a2660b3cfed8f745d2eeb6ac6a5e51d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e3013eafc18f17bcc8c5db3fe637c09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_resampler_speex.html#a2e3013eafc18f17bcc8c5db3fe637c09">~AudioResamplerSpeex</a> () override</td></tr>
 <tr class="separator:a2e3013eafc18f17bcc8c5db3fe637c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bd050afff0a45f6b0f549a66ce0f5d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_resampler_speex.html#a6bd050afff0a45f6b0f549a66ce0f5d8">quality</a> () const noexcept</td></tr>
+<tr class="separator:a6bd050afff0a45f6b0f549a66ce0f5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f8c7461111481f21e3364db7e8895f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_resampler_speex.html#a05f8c7461111481f21e3364db7e8895f">setQuality</a> (int <a class="el" href="class_aulib_1_1_audio_resampler_speex.html#a6bd050afff0a45f6b0f549a66ce0f5d8">quality</a>)</td></tr>
+<tr class="separator:a05f8c7461111481f21e3364db7e8895f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_aulib_1_1_audio_resampler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_aulib_1_1_audio_resampler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_aulib_1_1_audio_resampler.html">Aulib::AudioResampler</a></td></tr>
 <tr class="memitem:a3a72c986bcee0af8ef2851403cd7ca80 inherit pub_methods_class_aulib_1_1_audio_resampler"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aulib_1_1_audio_resampler.html#a3a72c986bcee0af8ef2851403cd7ca80">AudioResampler</a> ()</td></tr>
 <tr class="memdesc:a3a72c986bcee0af8ef2851403cd7ca80 inherit pub_methods_class_aulib_1_1_audio_resampler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an audio resampler.  <a href="class_aulib_1_1_audio_resampler.html#a3a72c986bcee0af8ef2851403cd7ca80">More...</a><br /></td></tr>
@@ -135,22 +139,37 @@ Protected Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_audio_resampler_speex_8h_source.html#l00011">11</a> of file <a class="el" href="_audio_resampler_speex_8h_source.html">AudioResamplerSpeex.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a22852f02a9082adb3fa29ae0dc4cdbf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22852f02a9082adb3fa29ae0dc4cdbf8">&#9670;&nbsp;</a></span>AudioResamplerSpeex()</h2>
+<a id="a2660b3cfed8f745d2eeb6ac6a5e51d2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2660b3cfed8f745d2eeb6ac6a5e51d2b">&#9670;&nbsp;</a></span>AudioResamplerSpeex()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Aulib::AudioResamplerSpeex::AudioResamplerSpeex </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>quality</em> = <code>5</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">quality</td><td>Speex resampler quality level, from 0 to 10. The value is clamped if it lies outside this range. Note that the quality can be changed later on if required. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="_audio_resampler_speex_8cpp_source.html#l00020">20</a> of file <a class="el" href="_audio_resampler_speex_8cpp_source.html">AudioResamplerSpeex.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_resampler_speex_8cpp_source.html#l00028">28</a> of file <a class="el" href="_audio_resampler_speex_8cpp_source.html">AudioResamplerSpeex.cpp</a>.</p>
 
 </div>
 </div>
@@ -233,7 +252,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="class_aulib_1_1_audio_resampler.html#a9a0e0a896c26cd96f5ba3decc9a7d5d1">Aulib::AudioResampler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_audio_resampler_speex_8cpp_source.html#l00051">51</a> of file <a class="el" href="_audio_resampler_speex_8cpp_source.html">AudioResamplerSpeex.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_resampler_speex_8cpp_source.html#l00077">77</a> of file <a class="el" href="_audio_resampler_speex_8cpp_source.html">AudioResamplerSpeex.cpp</a>.</p>
 
 </div>
 </div>
@@ -293,7 +312,54 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="class_aulib_1_1_audio_resampler.html#a10aca8cec4df2471de18345873edeb67">Aulib::AudioResampler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_audio_resampler_speex_8cpp_source.html#l00029">29</a> of file <a class="el" href="_audio_resampler_speex_8cpp_source.html">AudioResamplerSpeex.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_resampler_speex_8cpp_source.html#l00055">55</a> of file <a class="el" href="_audio_resampler_speex_8cpp_source.html">AudioResamplerSpeex.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6bd050afff0a45f6b0f549a66ce0f5d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bd050afff0a45f6b0f549a66ce0f5d8">&#9670;&nbsp;</a></span>quality()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Aulib::AudioResamplerSpeex::quality </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_audio_resampler_speex_8cpp_source.html#l00037">37</a> of file <a class="el" href="_audio_resampler_speex_8cpp_source.html">AudioResamplerSpeex.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a05f8c7461111481f21e3364db7e8895f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f8c7461111481f21e3364db7e8895f">&#9670;&nbsp;</a></span>setQuality()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Aulib::AudioResamplerSpeex::setQuality </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>quality</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_audio_resampler_speex_8cpp_source.html#l00044">44</a> of file <a class="el" href="_audio_resampler_speex_8cpp_source.html">AudioResamplerSpeex.cpp</a>.</p>
 
 </div>
 </div>
